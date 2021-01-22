@@ -47,9 +47,6 @@
     <ClInclude Include="Utils.h">
       <Filter>core</Filter>
     </ClInclude>
-    <ClInclude Include="BigInt.hpp">
-      <Filter>core</Filter>
-    </ClInclude>
     <ClInclude Include="BigInt.h">
       <Filter>core</Filter>
     </ClInclude>
