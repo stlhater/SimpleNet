@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Client.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteStream.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketBase.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="BigInt.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Client.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteStream.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketBase.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Enumerations.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInt.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInt.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{09271b90-5c34-44b6-96b4-5ead9b06d0f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
