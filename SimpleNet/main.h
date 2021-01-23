@@ -1,4 +1,6 @@
 #pragma once
+//#define TEST
+
 #include <iostream>
 #include <algorithm>
 #include <functional>

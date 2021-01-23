@@ -21,7 +21,11 @@ struct DiffieHellmanData {
 class Client
 {
 public:
+#ifdef TEST
+	bool Connect(const char* ip, unsigned short port, BigInt p, BigInt g, BigInt private_num);
+#else 
 	bool Connect(const char* ip, unsigned short port);
+#endif
 	void Disconnect(int reason);
 	void Send(ByteStream& bs);
 	Packet* Receive();

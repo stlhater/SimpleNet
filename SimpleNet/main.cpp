@@ -12,7 +12,7 @@
 
 
 #ifdef SERVER
-int main() {
+int main(int argvc, char** argvs) {
 	Server server;
 	server.Start(7777);
 	while (GetAsyncKeyState(VK_END) == 0) {
@@ -37,10 +37,20 @@ int main() {
 
 
 #ifdef CLIENT
-int main() {
+int main(int argvc, char** argvs) {
 	srand(GetTickCount());
 	Client client;
+#ifdef TEST
+	if (argvc != 4) {
+		std::cout << "Wrong arguments(" << argvc << ")" << std::endl;
+		system("pause");
+		return -1;
+	}
+	std::cout << "Running test." << std::endl;
+	client.Connect("127.0.0.1", 7777, std::string(argvs[1]), std::string(argvs[2]), std::string(argvs[3]));
+#else
 	client.Connect("127.0.0.1", 7777);
+#endif
 	while (GetAsyncKeyState(VK_ESCAPE) == 0) {
 		Packet* p = client.Receive();
 		if (p) {
